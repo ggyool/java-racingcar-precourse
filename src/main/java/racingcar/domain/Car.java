@@ -14,15 +14,19 @@ public class Car {
         this.name = name;
     }
 
-    public void forwardOneStep() {
-        forward(ONE);
+    public void moveForwardOneStep() {
+        moveForward(ONE);
     }
 
-    public void forward(int step) {
+    public void moveForward(int step) {
         if (step <= ZERO) {
             return;
         }
         position += step;
+    }
+
+    public boolean isMaxPosition(int maxPosition) {
+        return position == maxPosition;
     }
 
     public int getPosition() {

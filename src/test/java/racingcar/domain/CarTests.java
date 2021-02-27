@@ -28,10 +28,11 @@ class CarTests {
         Car car = new Car("test");
 
         for (int i = 0; i < forwardCount; i++) {
-            car.forwardOneStep();
+            car.moveForwardOneStep();
         }
 
         assertThat(car.getPosition())
                 .isEqualTo(forwardCount);
     }
+
 }

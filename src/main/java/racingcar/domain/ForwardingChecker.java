@@ -11,7 +11,7 @@ public class ForwardingChecker {
         cars.getCars()
                 .stream()
                 .filter(ForwardingChecker::isMovable)
-                .forEach(Car::forwardOneStep);
+                .forEach(Car::moveForwardOneStep);
     }
 
     private static boolean isMovable(Car car) {

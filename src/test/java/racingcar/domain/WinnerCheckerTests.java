@@ -29,7 +29,7 @@ class WinnerCheckerTests {
         List<Car> carList = new ArrayList<>();
         for (int i = 0; i < positions.size(); i++) {
             Car car = new Car(carNameSamples[i]);
-            car.forward(positions.get(i));
+            car.moveForward(positions.get(i));
             carList.add(car);
         }
         Cars cars = new Cars(carList);
